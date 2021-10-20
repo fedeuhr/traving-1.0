@@ -89,6 +89,7 @@ function buscarPasaje() {
     if (origen.value === "" || destino.value === "" || ida.value === "" || pasajeros.value === "" ) {
 
         window.alert ("Por favor, completá los datos");
+        return false;
 
     } else {
 
