@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/feec0aeaff.js" crossorigin="anonymous"></script>
+    <title>Traving</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nav">
+            <div class="logo_traving">
+                <img src="Files/Logo.svg" width="100px" alt="Traving">
+            </div>
+            <div class="buttons">
+                <div class="services"><a href="Pages/services.html">Servicios</a></div>
+                <div class="register"><a href="Pages/register.html">Registrar</a></div>
+                <div class="ayuda"><a href="Pages/ayuda.html">Ayuda</a></div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main_image"></div>
+            <div class="content_main">
+                <div class="content_text"></div>
+                <div class="reserva">
+                    <div class="reserva_titulo">
+                        <h3>Reservá tu próximo Destino</h3>
+                    </div>
+                    <div class="reserva_datos">
+                        <div class="reserva_origen_destino">
+                            <select class="reserva_origen" id="origen" type="text">
+                                <option disabled="true" selected="true">Orígen</option>
+                                <option value="1">[EZE]-Ezeiza</option>
+                                <option value="2">[MDQ]-Mar del Plata</option>
+                                <option value="3">[AEP]-Aeroparque</option>
+                                <option value="4">[EPA]-Palomar</option>
+                                <option value="5">[ROS]-Rosario</option>
+                                <option value="6">[MDZ]-Mendoza</option>
+                            </select>
+                            <select class="reserva_destino" id="destino" type="text">
+                                <option disabled="true" selected="true">Destíno</option>
+                                <option value="1">[MAD]-Madrid</option>
+                                <option value="2">[COR]-Cordoba</option>
+                                <option value="3">[BRC]-Bariloche</option>
+                                <option value="4">[GRU]-San Pablo</option>
+                                <option value="5">[BOG]-Bogotá</option>
+                                <option value="6">[SCL]-Santiago de Chile</option>
+                                <option value="7">[ATL]-Atlanta</option>
+                                <option value="8">[MIL]-Milan</option>
+                                <option value="9">[DXB]-Dubai</option>
+                                <option value="10">[MAC]-Macao</option>
+                                <option value="11">[INC]-Seúl</option>
+                                <option value="12">[CDG]-París</option>
+                            </select>
+                        </div>
+                        <div class="fechas">
+                            Ida: <input class="fechas_ida" id="fechaIda" type="date">
+                            <br>vuelta: <input class="fechas_vuelta" id="fechaVuelta" type="date">
+                        </div>
+                        <input class="reserva_pasajeros" type="number" id="pasajeros" placeholder="Pasajeros">
+                        <div onclick="buscarPasaje()" class="buscar_reserva" id="buscarReserva">Buscar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pasajes">
+            <div class="pasajes_titulo">
+                <h2>Pasajes en Oferta</h2>
+            </div>
+            <div class="pasajes_card">
+                <div class="pasajesblock1">
+                    <div class="pasajes_card_1">
+                        <div class="card1shadow">
+                            <div class="card1titulo">
+                                <h1>Bariloche</h1>
+                            </div>
+                            <div class="card1precio">
+                                <h4>Desde</h4>
+                                <h2>$8000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pasajes_card_2">
+                        <div class="card2shadow">
+                            <div class="card2titulo">
+                                <h2>Mar del Plata</h2>
+                            </div>
+                            <div class="card2precio">
+                                <h4>Desde</h4>
+                                <h2>$6000</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pasajesblock2">
+                    <div class="pasajes_card_3">
+                        <div class="card3shadow">
+                            <div class="card3titulo">
+                                <h2>Rio de Janeiro</h2>
+                            </div>
+                            <div class="card3precio">
+                                <h4>Desde</h4>
+                                <h2>$11000</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pasajes_card_4">
+                        <div class="card4shadow">
+                            <div class="card4titulo">
+                                <h2>Machu Picchu</h2>
+                            </div>
+                            <div class="card4precio">
+                                <h4>Desde</h4>
+                                <h2>$13000</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="data1">
+            <div class="data1_img"></div>
+            <div class="data1_info">
+                <div class="data1_info_texto">
+                    <div class="data1_info_texto_titulo"></div>
+                    <div class="data1_info_texto_descrip">
+                        <h3>Descarga la app</h3>
+                    </div>
+                </div>
+                <div class="data1_info_img_playstore"></div>
+            </div>
+        </div>
+        <div class="data2">
+            <div class="data2_txt">  
+                <h1>VIAJÁ</h1>
+                <h3>Descubrí | Experimentá | Disfrutá</h3>
+            </div>
+            <div class="data2_info">
+                <h1>Vacaciones</h1>
+                <hr>
+                <h3>Planifica el viaje de tus sueños, nosotros lo hacemos posible!</h3>
+                <hr>
+                <button class="data2_btn">Ver mas</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer_logo"></div>
+            <div class="footer_redes">
+                <div class="footer_seguinos">
+                    <h4>Seguinos</h4>
+                </div>
+                <div class="footer_ig"><i class="fab fa-instagram"></i>
+                    <h5>&nbsp /trivant</h5>
+                </div>
+                <div class="footer_tw"><i class="fab fa-twitter"></i>
+                    <h5>&nbsp @trivant_ok</h5>
+                </div>
+                <div class="footer_fb"><i class="fab fa-facebook"></i>
+                    <h5>&nbsp trivant
+                    </h5>
+                </div>
+            </div>
+            <div class="footer_derechos">
+                <h3>Traving 2021®</h3>
+                <h6>All rights reserved</h6>
+            </div>
+        </footer>
+    </div>
+
+    <script src="../JS/buscarpasaje.js"></script>
+</body>
+
+</html>
